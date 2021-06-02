@@ -11,11 +11,11 @@
     <p style="text-align:center;"><strong>Welcome to Comsys App</strong></p>
     <p style="text-align:center;">Medkad Complaint Management System</p>
 
-    <ion-card button="true" href="">
+    <ion-card button="true" (click)="createComplaint()">
       <ion-item color="danger">
         <ion-icon name="document-text-outline" slot="start"></ion-icon>
         <ion-label><strong>Create A Complaint</strong></ion-label>
-        <ion-button color="tertiary" slot="end">Create</ion-button>
+        <ion-button (click)="createComplaint()" color="tertiary" slot="end">Create</ion-button>
       </ion-item>
 
       <ion-card-content>
@@ -23,7 +23,7 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card button="true" href="">
+    <ion-card button="true">
       <ion-item color="danger">
         <ion-icon name="search-circle-outline" slot="start"></ion-icon>
         <ion-label><strong>Search Your Complaint</strong></ion-label>
@@ -35,7 +35,7 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card button="true" href="">
+    <ion-card button="true">
       <ion-item color="danger">
         <ion-icon name="mail-outline" slot="start"></ion-icon>
         <ion-label><strong>Contact Us</strong></ion-label>
