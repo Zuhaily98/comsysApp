@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'create',
+    loadChildren: () => import('./complaints/create/create.module').then( m => m.CreatePageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./complaints/search/search.module').then( m => m.SearchPageModule)
+  },
 ];
 
 @NgModule({

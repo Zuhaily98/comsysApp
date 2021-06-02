@@ -1,0 +1,98 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Create Complaint
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <ion-label>
+        Personal Details
+      </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="fixed">Full Name</ion-label>
+      <ion-input placeholder="Enter your name here"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Email</ion-label>
+      <ion-input placeholder="Enter your email"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <ion-label>
+        Panel Selection
+      </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>State</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option value="Selangor">Selangor</ion-select-option>
+        <ion-select-option value="Melaka">Melaka</ion-select-option>
+        <ion-select-option value="Terengganu">Terengganu</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>City</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option value="Shah Alam">Shah Alam</ion-select-option>
+        <ion-select-option value="Jasin">Jasin</ion-select-option>
+        <ion-select-option value="Kuala Terengganu">Kuala Terengganu</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>District</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option value="Seksyen 13">Seksyen 13</ion-select-option>
+        <ion-select-option value="Merlimau">Merlimau</ion-select-option>
+        <ion-select-option value="Chendering">Chendering</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Panel</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option value="UniKlinik Shah Alam">UniKlinik Shah Alam</ion-select-option>
+        <ion-select-option value="Klinik Kesihatan Merlimau">Klinik Kesihatan Merlimau</ion-select-option>
+        <ion-select-option value="Hospital Kuala Terengganu">Hospital Kuala Terengganu</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <ion-label>
+        Complaint Details
+      </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Complaint Category</ion-label>
+      <ion-select value="">
+        <ion-select-option value="01">TV display broke down</ion-select-option>
+        <ion-select-option value="02">TV cannot open</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Complaint Details</ion-label>
+      <ion-textarea placeholder="Write your complaints here"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <ion-label>
+        Upload Attachment
+      </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-button size="small" color="success">Upload</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <section>
+    <ion-button expand="block" color="danger">Submit Complaint</ion-button>
+  </section>
