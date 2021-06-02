@@ -7,9 +7,44 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id="container">
-    <p style="text-align:center;"><img src="assets/icon/medkad.png" alt="" width="200px" height="200px"></p>
-    <strong>Welcome to Comsys App</strong>
-    <p>Medkad Complaint Management System</p>
-  </div>
+    <p style="text-align:center;"><img src="assets/icon/medkad.png" alt="" width="150px" height="auto"></p>
+    <p style="text-align:center;"><strong>Welcome to Comsys App</strong></p>
+    <p style="text-align:center;">Medkad Complaint Management System</p>
+
+    <ion-card button="true">
+      <ion-item color="danger">
+        <ion-icon name="document-text-outline" slot="start"></ion-icon>
+        <ion-label><strong>Create A Complaint</strong></ion-label>
+        <ion-button slot="end">New</ion-button>
+      </ion-item>
+
+      <ion-card-content>
+        File a complaint to the MedKad Admins and Crews regarding any technical difficulties
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card button="true">
+      <ion-item color="danger">
+        <ion-icon name="search-circle-outline" slot="start"></ion-icon>
+        <ion-label><strong>Search Your Complaint</strong></ion-label>
+        <ion-button slot="end">Search</ion-button>
+      </ion-item>
+
+      <ion-card-content>
+        Search your previous submitted complaint using unique complaint ID. The complaint ID were sent to your email upon updates on your complaint details
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card button="true">
+      <ion-item color="danger">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label><strong>Contact Us</strong></ion-label>
+        <ion-button slot="end">Contact</ion-button>
+      </ion-item>
+
+      <ion-card-content>
+        Feel free to contact us by filling the form. We will keep in touch with your messages and complaints
+      </ion-card-content>
+    </ion-card>
+
 </ion-content>
